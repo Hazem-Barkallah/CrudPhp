@@ -5,6 +5,9 @@ require_once "./db_connected.php";
 //  $req=$pdo->query("select * from todos where id=1");
 //  $res=$req->fetchAll();
 
+
+
+
 $req = $pdo->prepare("select * from todos ");
 $req->execute();
 $res = $req->fetchAll();
